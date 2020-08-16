@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+body{
+  background: url(./coffeeShop.jpeg) center fixed no-repeat;
+  background-size: cover;
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+body > div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  width: 450px;
+  text-align: center;
+}
+
+body > div > form > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body > figure{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  z-index: 2;
+}
